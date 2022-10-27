@@ -21,9 +21,9 @@ type question struct {
 }
 
 func main() {
-	// setup flag for -csv to allow a user-specified list of questions and answers to be used
+	// setup flag for -csv to allow a user-specified list of questions and answers to be used - default problems.csv
 	csvPtr := flag.String("csv", "problems.csv", "csv file in the format of 'question,answer'")
-	// setup flag for -limit to allow a user-specified time limit to answer the questions
+	// setup flag for -limit to allow a user-specified time limit to answer the questions - default 30 seconds
 	limitPtr := flag.Int("limit", 30, "the time limit for the quiz in seconds")
 	// Parse() parses all command-line flags in os.Args[1:]
 	flag.Parse()
